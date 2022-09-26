@@ -1,0 +1,11 @@
+FROM ubuntu:22.04
+
+RUN apt update
+
+RUN apt install -y mc
+
+WORKDIR /var/www/docker_project
+
+COPY docker_test.txt subfolder/test.txt
+
+CMD bash

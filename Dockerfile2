@@ -1,0 +1,9 @@
+FROM openjdk:8
+
+WORKDIR /var/tmp/docker
+
+COPY src/Main.java Main.java
+
+RUN javac Main.java
+
+CMD java Main
